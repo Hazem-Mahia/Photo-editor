@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Photo Editor</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvase"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="Contrast">Contrast</label>
+                    <input type="range" id="Contrast" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="brightness">brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="Sepia">Sepia</label>
+                    <input type="range" id="Sepia" min="0" max="200" value="0">
+                </li>
+
+                <li>
+                    <label for="Grayscale">Grayscale</label>
+                    <input type="range" id="Grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+
+                <li>
+                    <label for="blur">blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+
+                <li>
+                    <label for="Huerotate">Hue-rotate</label>
+                    <input type="range" id="Huerotate" min="0" max="350" value="0">
+                </li>
+
+                <li>
+                    <a download="image" id="download">Download</a>
+                    <span onclick="resetvalue()">Reset</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
